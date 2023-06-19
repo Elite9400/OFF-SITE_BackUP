@@ -62,7 +62,7 @@ echo Copia in corso del disco K: nel disco D:...
 REM Misura il tempo di completamento
 set start_time=!time!
 
-Xcopy K:\*.* D:\ /C /V /F /E /Y /I /J /Z /BufferSize:4096 2>> back-up_log.txt
+Xcopy K:\*.* D:\ /C /V /F /E /Y /I /J /Z 2>> back-up_log.txt
 if errorlevel 1 (
     echo Errore durante la copia dei file.
 	echo================================================== >> back-up_log.txt
