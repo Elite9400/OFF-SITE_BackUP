@@ -1,38 +1,20 @@
 @echo off
+setlocal enabledelayedexpansion
+
 color 02
 echo.
-echo BBBBB    A    CCCCC K     K  U    U PPPPP
-echo B    B  A A  C      K   K    U    U P    P
-echo BBBBB  AAAAA C      K K      U    U PPPPP
-echo B    B A   A C      K   K    U    U P
-echo BBBBB  A   A  CCCCC K     K   UUUU  P
-echo.
-echo FFFFF IIIII SSSSS IIIII  CCCCC  OOOOO
-echo F       I   S       I   C     C O   O
-echo FFFF    I   SSSSS   I   C     C O   O
-echo F       I       S   I   C     C O   O
-echo F     IIIII SSSSS IIIII  CCCCC  OOOOO
-echo.
-echo DDDD  EEEEE L       FFFFF IIIII L     EEEEE    SSSSS EEEEE RRRR   V   V EEEEE RRRR
-echo D   D E     L       F       I   L     E        S     E     R   R  V   V E     R   R
-echo D   D EEEE  L       FFFF    I   L     EEEE     SSSSS EEEE  RRRR   V   V EEEE  RRRR
-echo D   D E     L       F       I   L     E            S E     R  R   V   V E     R  R
-echo DDDD  EEEEE LLLLL   F     IIIII LLLLL EEEEE    SSSSS EEEEE R   R   VVV  EEEEE R   R
+<inserisci qui gli altri comandi di testo>
 echo.
 echo==================================================
-echo Il processo di copia avra inizio fra 5 secondi...
+echo Il processo di copia avrà inizio tra 5 secondi...
 timeout /t 1 /nobreak >nul
-echo Il processo di copia avra inizio fra 4 secondi...
-timeout /t 1 /nobreak >nul
-echo Il processo di copia avra inizio fra 3 secondi...
-timeout /t 1 /nobreak >nul
-echo Il processo di copia avra inizio fra 2 secondi...
-timeout /t 1 /nobreak >nul
-echo Il processo di copia avra inizio fra 1 secondi...
-timeout /t 1 /nobreak >nul
+<inserisci qui gli altri comandi di timeout>
 echo==================================================
-
-echo . >> back-up_log.txt
+<inserisci qui le istruzioni per scrivere l'ora di avvio>
+<inserisci qui i controlli sull'esistenza dei dischi>
+echo==================================================
+echo Avvio copia di back-up out-site.
+echo==================================================
 echo================================================== >> back-up_log.txt
 echo COPIA DISCO - %date% >> back-up_log.txt
 echo================================================== >> back-up_log.txt
@@ -90,7 +72,6 @@ echo================================================== >> back-up_log.txt
 echo Durata della copia: !elapsed_time_hours!:!elapsed_time_minutes!:!elapsed_time_seconds! >> back-up_log.txt
 echo================================================== >> back-up_log.txt
 
-
 timeout /t 10 /nobreak >nul
 if errorlevel 1 (
 	echo================================================== >> back-up_log.txt
@@ -98,5 +79,5 @@ if errorlevel 1 (
 	echo================================================== >> back-up_log.txt
     echo Spegnimento del computer in corso...
 	echo . >> back-up_log.txt
-    shutdown /s /t 20
+   shutdown /s /f /t 600
 )
