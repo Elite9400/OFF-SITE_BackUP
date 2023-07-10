@@ -3,15 +3,54 @@ setlocal enabledelayedexpansion
 
 color 02
 echo.
-<inserisci qui gli altri comandi di testo>
+echo  UUUU  FFFFF FFFFF IIIII  CCCCC  4444
+echo U    U F     F       I   C     C 4   4
+echo U    U FFFF  FFFF    I   C         444
+echo U    U F     F       I   C     C     4
+echo  UUUU  F     F     IIIII  CCCCC  4444
+echo.
+echo.
+echo  BBBBB    A    CCCCC K     K  U    U PPPPP
+echo  B    B  A A  C      K   K    U    U P    P
+echo  BBBBB  AAAAA C      K K      U    U PPPPP
+echo  B    B A   A C      K   K    U    U P
+echo  BBBBB  A   A  CCCCC K     K   UUUU  P
+echo.
+echo FFFFF IIIII SSSSS IIIII  CCCCC  OOOOO
+echo F       I   S       I   C     C O   O
+echo FFFF    I   SSSSS   I   C     C O   O
+echo F       I       S   I   C     C O   O
+echo F     IIIII SSSSS IIIII  CCCCC  OOOOO
+echo.
+echo DDDD  EEEEE L     FFFFF IIIII L     EEEEE    SSSSS EEEEE RRRR   V   V EEEEE RRRR
+echo D   D E     L     F       I   L     E        S     E     R   R  V   V E     R   R
+echo D   D EEEE  L     FFFF    I   L     EEEE     SSSSS EEEE  RRRR   V   V EEEE  RRRR
+echo D   D E     L     F       I   L     E            S E     R  R   V   V E     R  R
+echo DDDD  EEEEE LLLLL F     IIIII LLLLL EEEEE    SSSSS EEEEE R   R   VVV  EEEEE R   R
 echo.
 echo==================================================
-echo Il processo di copia avrà inizio tra 5 secondi...
+echo Il processo di copia avra inizio fra 10 secondi...
 timeout /t 1 /nobreak >nul
-<inserisci qui gli altri comandi di timeout>
+echo Il processo di copia avra inizio fra 9 secondi...
+timeout /t 1 /nobreak >nul
+echo Il processo di copia avra inizio fra 8 secondi...
+timeout /t 1 /nobreak >nul
+echo Il processo di copia avra inizio fra 7 secondi...
+timeout /t 1 /nobreak >nul
+echo Il processo di copia avra inizio fra 6 secondi...
+timeout /t 1 /nobreak >nul
+echo Il processo di copia avra inizio fra 5 secondi...
+timeout /t 1 /nobreak >nul
+echo Il processo di copia avra inizio fra 4 secondi...
+timeout /t 1 /nobreak >nul
+echo Il processo di copia avra inizio fra 3 secondi...
+timeout /t 1 /nobreak >nul
+echo Il processo di copia avra inizio fra 2 secondi...
+timeout /t 1 /nobreak >nul
+echo Il processo di copia avra inizio fra 1 secondi...
+timeout /t 1 /nobreak >nul
+echo Avvio copia di back-up out-site.
 echo==================================================
-<inserisci qui le istruzioni per scrivere l'ora di avvio>
-<inserisci qui i controlli sull'esistenza dei dischi>
 echo==================================================
 echo Avvio copia di back-up out-site.
 echo==================================================
